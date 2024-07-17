@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulación del DOM - Curso práctico de Java Script</title>
+</head>
+<body>
+  <h1 class="lg">Manipulación del DOM básica</h1>
+  <p id="pid">Esto es una prueba</p>
+  <p class="prueba">Esto es otra prueba</p>
+  <!-- //El onechange nos permite escuchar cuando los usuarios han finalizado de escribir  -->
+  <input onchange id="calculo1" placeholder="Escribe algo" >
+  <input id="calculo2" placeholder="Escribe algo">
+  <!-- //El onclick permite escuchar cuando se le da click al botón -->
+  <button onclick="buttonCalcular()" id="calcular" >Calcular</button>
+  <p id="result"></p>
+  <script src="./script.js">
+  </script>
+</body>
+</html>
+
+<!-- manipulación del DOM son como se escuchan los eventos -->

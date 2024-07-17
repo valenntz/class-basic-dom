@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>juegue</title>
+    <script>
+      function aleatorio(min,max){
+        Math.floor(Math.random() *(max - 1*min)+1)
+      }
+      function eleccion(jugada){
+        let seleccion
+        if (jugada == 1) {
+          seleccion= "Elegiste 🪨"
+        } else if (jugada == 2){
+          seleccion= "Elegiste 🧻"
+        } else if(jugada == 3){
+          seleccion= "Elegiste ✂️"
+        } else{
+          seleccion = "ELEGISTE MAL"
+        }
+        return seleccion
+      }
+      let jugador = 0
+      let pc = alert(aleatorio(1,3))
+      jugador = prompt("elige 1 para piedra, 2 para papel y 3 para tijeras")
+
+      alert("Tú elegiste " + eleccion(jugador))
+      alert("Pc elegió " + eleccion(pc))
+      
+    </script>
+  </head>
+</html>
+iVBORw0KGgoAAAANSUhEUgAAASAAAAGACAYAAAANn79uAAAARGVYSWZNTQAqAAAACAABh2kABAAAAAEAAAAaAAAAAAADoAEAAwAAAAEAAQAAoAIABAAAAAEAAAEgoAMABAAAAAEAAAGAAAAAAPivmCEAAQAASURBVHjabP1Zky3JkSaIfapm5n7OiYi7ZCYSQKGqu6q6e2RmKN2cBz6Qv4YifOXv4wuFf2FkSApnqnuqu4ACkMjl7hFxFndblA
